@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta property="og:image" content="/profile.png" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
         <link rel="icon" href="/logo.svg" />
       </head>
