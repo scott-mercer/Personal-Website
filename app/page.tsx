@@ -36,7 +36,7 @@ export default function HomePage() {
 
         <div className="flex justify-center gap-4 pt-2">
           <a
-            href="/Resume.pdf"
+            href="/resume.pdf"
             target="_blank"
             className="px-5 py-2 bg-black text-white rounded hover:bg-gray-800 transition"
           >
