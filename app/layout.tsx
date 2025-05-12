@@ -23,6 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/logo.svg" />
       </head>
       <body className="bg-white text-gray-900 font-sans antialiased">{children}</body>
+      <Analytics />
     </html>
   )
 }
