@@ -5,7 +5,7 @@ import { Github, Linkedin } from 'lucide-react'
 const projects = [
   {
     title: 'MATRIX & Appium CI/CD',
-    description: 'Plug Appium into your CI/CD workflow with a Matrix Security Assesment.',
+    description: 'Plug Appium into your CI/CD workflow with a Matrix Security Assessment.',
     github: 'https://gitlab.com/matrix203008/appium-ci-example',
     tags: ['Python', 'Bash', 'Appium', 'CI/CD'],
   },
