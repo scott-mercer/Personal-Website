@@ -4,10 +4,10 @@ import { Github, Linkedin } from 'lucide-react'
 
 const projects = [
   {
-    title: 'Frida Script Orchestration Tool',
-    description: 'Bypass mobile security using Frida + Python automation.',
-    github: 'https://github.com/scott-mercer',
-    tags: ['Python', 'Frida', 'Mobile Security'],
+    title: 'MATRIX & Appium CI/CD',
+    description: 'Plug Appium into your CI/CD workflow with a Matrix Security Assesment.',
+    github: 'https://gitlab.com/matrix203008/appium-ci-example',
+    tags: ['Python', 'Bash', 'Appium', 'CI/CD'],
   },
   {
     title: 'Sales Demo Helper App',
