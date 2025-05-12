@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import { ReactNode } from 'react'
+import { Analytics } from "@vercel/analytics/next"
 import { Github, Linkedin } from 'lucide-react'
 
 export const metadata = {
