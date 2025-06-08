@@ -4,6 +4,12 @@ import { Github, Linkedin } from 'lucide-react'
 
 const projects = [
   {
+    title: 'DeviceIQ',
+    description: 'Helps mobile teams prioritize and orchestrate testing across real-world devices based on actual user behavior.',
+    github: 'https://github.com/scott-mercer/deviceiq',
+    tags: ['Python', 'TypeScript', 'Node.js', 'React'],
+  },
+  {
     title: 'MATRIX & Appium CI/CD',
     description: 'Plug Appium into your CI/CD workflow with a Matrix Security Assessment.',
     github: 'https://gitlab.com/matrix203008/appium-ci-example',
