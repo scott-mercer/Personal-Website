@@ -79,8 +79,6 @@ export default function HomePage() {
       </section>
 
       {/* Projects Section */}
-
-
       <section>
         <h2 className="text-4xl font-bold mb-12 tracking-tight">Selected Work</h2>
         <div className="grid gap-10 md:grid-cols-2">
@@ -93,8 +91,6 @@ export default function HomePage() {
                 {project.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">{project.description}</p>
-
-              {/* Tech stack tags */}
               <div className="flex flex-wrap gap-2 mt-4">
                 {project.tags.map((tag) => (
                   <span
@@ -105,8 +101,6 @@ export default function HomePage() {
                   </span>
                 ))}
               </div>
-
-              {/* GitHub link */}
               <a
                 href={project.github}
                 target="_blank"
@@ -117,6 +111,114 @@ export default function HomePage() {
               </a>
             </div>
           ))}
+        </div>
+      </section>
+
+      <hr className="my-16 border-gray-200" />
+
+      {/* Skills & Certifications Section */}
+      <section aria-label="Skills and Certifications">
+        <h2 className="text-4xl font-bold mb-4 tracking-tight">Skills & Certifications</h2>
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
+          <div className="space-y-6 text-lg">
+            <div>
+              <h3 className="font-semibold text-base mb-1">Languages & Databases</h3>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {['Python', 'Java', 'JavaScript', 'Shell', 'Bash', 'MySQL', 'Postgres'].map(skill => (
+                  <span
+                    key={skill}
+                    className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded-full hover:bg-gray-200 transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-base mb-1">Cloud & DevOps</h3>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {['AWS', 'GCP', 'Azure', 'Jenkins', 'Azure DevOps', 'CircleCI', 'Git', 'REST APIs'].map(skill => (
+                  <span
+                    key={skill}
+                    className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded-full hover:bg-gray-200 transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-base mb-1">Testing & Automation</h3>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {['Appium', 'Selenium'].map(skill => (
+                  <span
+                    key={skill}
+                    className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded-full hover:bg-gray-200 transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            {/* <div>
+              <h3 className="font-semibold text-base mb-1">Certifications</h3>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {[
+                  'AWS Certified Solutions Architect',
+                  'Google Associate Cloud Engineer',
+                  'Certified Scrum Master'
+                ].map(cert => (
+                  <span
+                    key={cert}
+                    className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded-full hover:bg-gray-200 transition"
+                  >
+                    {cert}
+                  </span>
+                ))}
+              </div>
+            </div> */}
+          </div>
+          <div className="space-y-6 text-lg">
+            <div>
+              <h3 className="font-semibold text-base mb-1">Analytics & Visualization</h3>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {['Grafana', 'Power BI'].map(skill => (
+                  <span
+                    key={skill}
+                    className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded-full hover:bg-gray-200 transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-base mb-1">Networking & Security</h3>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {['TCP/IP', 'IPv6', 'VPN', 'DNS', 'Routing', 'Firewalls', 'Burp Suite'].map(skill => (
+                  <span
+                    key={skill}
+                    className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded-full hover:bg-gray-200 transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-base mb-1">Project & Process Management</h3>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {['SDLC', 'Jira', 'Agile', 'CRM'].map(skill => (
+                  <span
+                    key={skill}
+                    className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded-full hover:bg-gray-200 transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
