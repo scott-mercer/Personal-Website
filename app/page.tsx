@@ -21,6 +21,12 @@ const projects = [
     github: 'https://github.com/scott-mercer',
     tags: ['TypeScript', 'Node.js', 'Corellium'],
   },
+  {
+    title: 'Personal Website & Portfolio',
+    description: 'Website to display my work and skills.',
+    github: 'https://github.com/scott-mercer/Personal-Website',
+    tags: ['TypeScript', 'Node.js', 'Next.js', 'Tailwind CSS'],
+  }
 ]
 
 export default function HomePage() {
