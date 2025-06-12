@@ -6,7 +6,7 @@ This site showcases selected projects, provides quick access to my resume, and i
 
 ---
 
-## ✨ Features
+## Features
 
 - Simple, responsive single-page layout  
 - Project cards with GitHub links and tech stack tags  
@@ -17,7 +17,7 @@ This site showcases selected projects, provides quick access to my resume, and i
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 app/
@@ -33,7 +33,7 @@ styles/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Install Dependencies
 
@@ -51,7 +51,7 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🔧 Customization
+## Customization
 
 - Update your profile info in `page.tsx`
 - Add project entries with `title`, `description`, `github`, and `tags`
@@ -60,7 +60,7 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 📦 Deployment
+## Deployment
 
 Deploy instantly to [Vercel](https://vercel.com) (recommended for Next.js):
 
@@ -71,8 +71,4 @@ vercel deploy
 
 Or connect your GitHub repo to Vercel and push to deploy.
 
----
 
-## 📄 License
-
-MIT — use freely, credit appreciated.
