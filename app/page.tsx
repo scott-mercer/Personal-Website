@@ -55,7 +55,7 @@ export default function HomePage() {
             View Resume
           </a>
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:sj.mercer00@gmail.com"
             className="px-5 py-2 border border-gray-300 rounded hover:bg-gray-100 transition"
           >
             Contact
