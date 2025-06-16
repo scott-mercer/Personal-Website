@@ -1,4 +1,6 @@
+"use client";
 import { Github, Linkedin } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 
 
@@ -30,8 +32,29 @@ const projects = [
 ]
 
 export default function HomePage() {
+  const [dark, setDark] = useState(false);
+
+  useEffect(() => {
+    if (dark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [dark]);
+
   return (
-    <div className="bg-white min-h-screen px-6 py-24 max-w-6xl mx-auto space-y-24">
+    <div className="bg-white dark:bg-gray-900 min-h-screen px-6 py-24 max-w-6xl mx-auto space-y-24">
+      {/* Dark mode toggle button */}
+      <div className="flex justify-end">
+        <button
+          onClick={() => setDark(!dark)}
+          className="mb-4 px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+          aria-label="Toggle dark mode"
+        >
+          {dark ? '🌙 Dark' : '☀️ Light'}
+        </button>
+      </div>
+
       {/* Hero Section */}
       <section className="space-y-6 text-center">
         <img
@@ -40,7 +63,7 @@ export default function HomePage() {
           className="w-28 h-28 mx-auto rounded-full border border-gray-300"
         />
 
-        <h1 className="text-5xl font-bold tracking-tight">Scott Mercer</h1>
+        <h1 className="text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Scott Mercer</h1>
 
         <p className="text-lg text-gray-600 max-w-xl mx-auto">
           I’m a Sales Engineer focused on mobile security, developer tooling, and automation. I build solutions that simplify complex workflows — and I share the ones I’m proud of here.
@@ -101,7 +124,7 @@ export default function HomePage() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full"
+                    className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded-full"
                   >
                     {tag}
                   </span>
